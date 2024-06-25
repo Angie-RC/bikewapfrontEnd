@@ -1,0 +1,16 @@
+<app-toolbar></app-toolbar>
+<div class="car-list-container">
+  <mat-card *ngFor="let car of cars" class="car-card">
+    <img mat-card-image [src]="car.image" alt="{{ car.brand }} {{ car.model }}">
+    <mat-card-header>
+      <mat-card-title>{{ car.brand }} {{ car.model }}</mat-card-title>
+      <mat-card-subtitle>{{ car.year }} - {{ car.color }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Price: ${{ car.price | number:'1.2-2' }}</p>
+      <p>Model: {{ car.model }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+<app-footer></app-footer>
+

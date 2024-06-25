@@ -1,0 +1,6 @@
+<mat-toolbar style="background-color: darkblue; color: #FFFFFF">
+  <h1>Car Finance</h1>
+  <div class="mat-spacer"></div>
+  <a style="background-color: lightblue;margin-left: 10px" mat-button *ngFor="let option of options"
+     [routerLink]="option.path"> {{ option.title }}</a>
+</mat-toolbar>

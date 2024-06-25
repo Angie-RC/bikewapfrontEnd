@@ -1,0 +1,25 @@
+<div class="container">
+
+  <mat-card style="background-color: darkblue" >
+    <mat-card-title style="margin-right: auto;margin-left: auto;margin-top: 30%; color: #EFB810; font-size: 300%">Car Finance</mat-card-title>
+    <img src="./assets/images/logoFinanzas.png" style="width: 50%;margin:auto">
+  </mat-card>
+
+  <mat-card >
+    <div class="login-form">
+      <img src="./assets/images/imgUserBlack.png" class="logo">
+      <p class="login-text"><b>Registro</b></p>
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <input formControlName="name" type="text" placeholder="Name" required>
+        <input formControlName="lastName" type="text" placeholder="Last Name" required>
+        <input formControlName="firstName" type="text" placeholder="First Name" required>
+        <input formControlName="email" type="email" placeholder="Email" required>
+        <input formControlName="password" type="password" placeholder="Password" required>
+        <button type="submit">Registrar</button>
+      </form>
+      <p> <b>¿Ya tienes una cuenta?</b></p>
+      <a routerLink="/navigation/login">Iniciar Sesión</a>
+    </div>
+  </mat-card>
+</div>
+

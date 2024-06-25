@@ -1,0 +1,177 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Pedro",
+      "lastName": "Lopez",
+      "email": "pedro@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "name": "Pablo",
+      "lastName": "Ramirez",
+      "email": "pablo@gmail.com",
+      "password": "12345"
+    },
+    {
+      "name": "Leydi Yaquelin",
+      "lastName": "Mamani Aro",
+      "email": "leydiaro4@gmail.com",
+      "password": "3454",
+      "id": 3
+    },
+    {
+      "name": "Clara Angie",
+      "lastName": "Valverde Salazar",
+      "email": "angievalverdesalazar123@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "kristel",
+      "lastName": "flores",
+      "email": "kristel.flores@gmail.com",
+      "password": "gatita",
+      "id": 5
+=======
+      "name": "user",
+      "lastName": "user",
+      "email": "user@gmail.com",
+      "password": "123",
+      "id": 4
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2022,
+      "color": "Red",
+      "price": 25000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "2.5L",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://www.carscoops.com/wp-content/uploads/2022/07/Toyota-Camry-Crown-1.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2021,
+      "color": "Blue",
+      "price": 22000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "2.0L",
+      "transmission": "CVT",
+      "seating_capacity": 5,
+      "image": "https://di-uploads-pod34.dealerinspire.com/ikehonda/uploads/2021/02/2021-honda-civic-profile.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 2023,
+      "color": "Black",
+      "price": 45000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "5.0L V8",
+      "transmission": "Manual",
+      "seating_capacity": 4,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/4e9a7794-1663012415.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Chevrolet",
+      "model": "Equinox",
+      "year": 2022,
+      "color": "Silver",
+      "price": 30000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "1.5L Turbo",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://images.dealer.com/autodata/us/color/2022/USD20CHS152D0/GAN.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "Nissan",
+      "model": "Altima",
+      "year": 2021,
+      "color": "White",
+      "price": 26000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "2.5L",
+      "transmission": "CVT",
+      "seating_capacity": 5,
+      "image": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/14809/2021-Nissan-Altima-front_14809_032_2400x1800_QAK.png"
+    },
+    {
+      "id": 6,
+      "brand": "BMW",
+      "model": "X5",
+      "year": 2023,
+      "color": "Gray",
+      "price": 60000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "3.0L Inline-6",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://i.ytimg.com/vi/Dhu4PkTiOi0/maxresdefault.jpg"
+    },
+    {
+      "id": 7,
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2022,
+      "color": "Black",
+      "price": 55000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "2.0L Turbo",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://i.ytimg.com/vi/xXveCxN0S7w/maxresdefault.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "Audi",
+      "model": "Q5",
+      "year": 2021,
+      "color": "Red",
+      "price": 48000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "2.0L Turbo",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://s1.cdn.autoevolution.com/images/news/2021-audi-q5-facelift-rendered-looks-better-136336_1.jpg"
+    },
+    {
+      "id": 9,
+      "brand": "Hyundai",
+      "model": "Tucson",
+      "year": 2023,
+      "color": "Blue",
+      "price": 28000,
+      "fuel_type": "Gasoline",
+      "engine_capacity": "2.4L",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://s7d1.scene7.com/is/image/hyundai/2022-tucson-hev?wid=1200&hei=630&qlt=85,0&fmt=webp"
+    },
+    {
+      "id": 10,
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "color": "White",
+      "price": 50000,
+      "fuel_type": "Electric",
+      "engine_capacity": "N/A",
+      "transmission": "Automatic",
+      "seating_capacity": 5,
+      "image": "https://media.ed.edmunds-media.com/tesla/model-3/2022/oem/2022_tesla_model-3_sedan_performance_fq_oem_1_1280.jpg"
+    }
+  ]
+}
