@@ -6,6 +6,7 @@ import {HomeComponent} from "./pages/home/home.component";
 import {WelcomeComponent} from "./pages/welcome/welcome.component";
 import {CarsListComponent} from "./pages/cars-list/cars-list.component";
 import {ProfileComponent} from "./pages/profile/profile.component";
+import {BikeFormComponent} from "./pages/bike/bike-form/bike-form.component";
 
 const routes: Routes = [
   {path: '',redirectTo:'navigation/welcome', pathMatch:'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'navigation/register', component: RegisterComponent},
   {path: 'navigation/list-cars', component: CarsListComponent},
   {path: 'navigation/profile', component: ProfileComponent},
+  {path: 'navigation/your-bikes/:id', component: BikeFormComponent},
 
 ];
 

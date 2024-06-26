@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Cars} from "../../models/Cars";
 import {CarsService} from "../../services/cars.service";
+import {Bike} from "../../models/bike";
+import {BikesService} from "../../services/bikes.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-cars-list',
@@ -8,22 +11,20 @@ import {CarsService} from "../../services/cars.service";
   styleUrls: ['./cars-list.component.css']
 })
 export class CarsListComponent implements OnInit{
-  cars: Cars[] = [];
+  bikes: Bike[] = []
 
-  constructor(private carService: CarsService) {}
+  constructor(private route:ActivatedRoute,
+              private _bikeService:BikesService) {}
 
   ngOnInit() {
-    this.getCarList();
+    this.getAllPost();
   }
 
-  getCarList() {
-    this.carService.getCars().subscribe(
-      (data: Cars[]) => {
-        this.cars = data;
-      },
-      (error) => {
-        console.error('Error fetching car list:', error);
+  getAllPost() {
+    this._bikeService.getAll().subscribe({
+      next: (val: any) => {
+        this.bikes = val;
       }
-    );
+    });
   }
 }
