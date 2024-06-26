@@ -1,5 +1,5 @@
 main{
-  background: darkblue;
+  background: #002C3E;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -34,4 +34,7 @@ button{
   font-weight: 500;
   color: #002C3E;
 
+}
+button:hover{
+  transform: scale(1.1);
 }

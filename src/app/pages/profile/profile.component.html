@@ -1,0 +1,53 @@
+
+<div class="container" *ngIf="user">
+  <section class="profile">
+    <div class="user">
+      <div class="photoUser" [style.background-image]="'url(' + notPhotoProfile + ')'">
+
+      </div>
+
+    </div>
+
+    <form [formGroup]="formUser" (ngSubmit)="updateUser()">
+      <div class="edit-info">
+        <div class="input-box">
+          <label>Name:</label>
+          <input type="text" class="input-info" placeholder="Name" formControlName="name">
+        </div>
+        <div class="input-box">
+          <label>Last Name:</label>
+          <input type="text" class="input-info" placeholder="Last Name" formControlName="lastName">
+        </div>
+        <div class="input-box">
+          <label>First Name:</label>
+          <input type="text" class="input-info" placeholder="First Name" formControlName="firstName">
+        </div>
+
+      </div>
+      <button type="submit">Save</button>
+
+    </form>
+  </section>
+
+
+</div>
+
+
+<section class="alert" *ngIf="showAlert">
+  <span class="alert-icon">Alert</span>
+  <p>Complete all fields to save</p>
+</section>
+
+<section class="actions">
+  <button routerLink="/navigation/list-cars/1">Your Posts</button>
+  <button routerLink="/navigation/your-bikes/1">Your Bikes</button>
+  <button routerLink="/navigation/your-clients">Your Clients</button>
+  <button routerLink="/navigation/rentals">Rentals</button>
+  <span></span>
+  <span></span>
+  <button class="out" (click)="logOut()" style="background: red">Log-Out</button>
+
+</section>
+
+
+

@@ -1,6 +1,12 @@
-<mat-toolbar style="background-color: darkblue; color: #FFFFFF">
-  <h1>Car Finance</h1>
-  <div class="mat-spacer"></div>
-  <a style="background-color: lightblue;margin-left: 10px" mat-button *ngFor="let option of options"
-     [routerLink]="option.path"> {{ option.title }}</a>
-</mat-toolbar>
+<header [ngClass]="(isUserLogged())?'':'center'">
+  <img src="./assets/images/logo1.png" class="imgLogo" routerLink="/home">
+
+  <div class="options" *ngIf="isUserLogged()">
+    <button routerLink="/list-posts">Posts</button>
+    <button routerLink="/navigation/reports">Reports</button>
+    <span></span>
+    <button  routerLink="/navigation/add-post" style="background: #67A1DB; margin-right: 20px">Make Post</button>
+    <img src="./assets/images/imgUser.png" id="imgUser" (click)="MyProfile()">
+  </div>
+</header>
+
