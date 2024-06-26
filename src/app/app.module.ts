@@ -19,6 +19,7 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import { CarsListComponent } from './pages/cars-list/cars-list.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CarsListComponent } from './pages/cars-list/cars-list.component';
     FooterComponent,
     HomeComponent,
     WelcomeComponent,
-    CarsListComponent
+    CarsListComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

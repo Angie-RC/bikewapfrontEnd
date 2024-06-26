@@ -1,6 +1,5 @@
 footer{
-  background-color:darkblue;
-  margin:80px auto 0;
+  background-color: #002C3E;
   padding: 20px;
 }
 footer p{
@@ -17,6 +16,11 @@ footer .container{
   text-align: center;
 }
 
+footer .container img{
+  height: 80px;
+  width: 100px;
+  margin: 15px;
+}
 @media (min-width: 700px){
 
   footer .container{
