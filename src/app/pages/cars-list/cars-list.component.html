@@ -1,16 +1,20 @@
 <app-toolbar></app-toolbar>
-<div class="car-list-container">
-  <mat-card *ngFor="let car of cars" class="car-card">
-    <img mat-card-image [src]="car.image" alt="{{ car.brand }} {{ car.model }}">
-    <mat-card-header>
-      <mat-card-title>{{ car.brand }} {{ car.model }}</mat-card-title>
-      <mat-card-subtitle>{{ car.year }} - {{ car.color }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>Price: ${{ car.price | number:'1.2-2' }}</p>
-      <p>Model: {{ car.model }}</p>
-    </mat-card-content>
-  </mat-card>
+<div class="posts">
+  <ng-container *ngFor="let post of bikes">
+    <div class="card-content">
+      <div class="imgPost" [style.background-image]="'url(' + post.image + ')'">
+        <span>{{post.name}}</span>
+      </div>
+      <div class="text-container">
+        <mat-card-title class="title">{{ post.model }}</mat-card-title>
+        <mat-card-subtitle class="price">$ {{ post.price }}</mat-card-subtitle>
+        <mat-card-subtitle class="description">{{post.description}}</mat-card-subtitle>
+        <mat-card-actions class="card-actions">
+          <button class="open-new" routerLink="/see-post/{{post.id}}">Show more</button>
+        </mat-card-actions>
+      </div>
+    </div>
+  </ng-container>
 </div>
 <app-footer></app-footer>
 

@@ -20,6 +20,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import { CarsListComponent } from './pages/cars-list/cars-list.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { BikeFormComponent } from './pages/bike/bike-form/bike-form.component';
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     HomeComponent,
     WelcomeComponent,
     CarsListComponent,
-    ProfileComponent
+    ProfileComponent,
+    BikeFormComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatInputModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

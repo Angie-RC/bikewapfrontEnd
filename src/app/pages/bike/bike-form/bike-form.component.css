@@ -1,0 +1,70 @@
+.title{
+  font-weight: bold;
+  text-align: center;
+  color: #002C3E;
+  font-size: x-large;
+  margin-top: 2rem;
+}
+form{
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 70%;
+  max-width: 600px;
+}
+.form-body{
+  display: grid;
+  gap: 0.3rem 2rem;
+}
+
+.button-save{
+  background: #3C84AB;
+  padding: 8px 10px;
+  margin: auto;
+  display: block;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+  border: none;
+  text-align: center;
+  width: 90%;
+  max-width: 200px;
+}
+
+textarea{
+  resize: none;
+}
+
+
+@media (min-width: 720px) {
+
+  .form-body {
+    grid-template-columns: repeat(5,1fr);
+  }
+  .form-field-description{
+    grid-column: span 3;
+  }
+  .name{
+    grid-column: span 3;
+  }
+  .category{
+    grid-column: span 2;
+  }
+  .characteristic{
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .location{
+    grid-column: span 3;
+  }
+  .available{
+    grid-column: span 2;
+  }
+  .imgUrl{
+    grid-column: span 3;
+  }
+
+}
+

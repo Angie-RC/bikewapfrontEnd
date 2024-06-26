@@ -1,0 +1,50 @@
+<app-toolbar></app-toolbar>
+<h1 class="title">{{editMode?'Edit':'Add'}} your bike</h1>
+<form [formGroup]="bikeForm">
+  <div class="form-body">
+    <mat-form-field appearance="outline" class="form-field name">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" name="name" formControlName="name" >
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field-description">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+      <mat-icon matSuffix>description</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field characteristic">
+      <mat-label>Price</mat-label>
+      <textarea matInput formControlName="price"></textarea>
+      <mat-icon matSuffix>list_alt</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field location">
+      <mat-label>Model</mat-label>
+      <input matInput type="text" name="model" formControlName="model" >
+      <mat-icon matSuffix>pin_drop</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field imgUrl">
+      <mat-label>Image</mat-label>
+      <textarea matInput formControlName="image"></textarea>
+      <mat-icon matSuffix>photo</mat-icon>
+    </mat-form-field>
+
+  </div>
+  <div style="display: flex;">
+    <button
+      (click)="addBike()"
+      class="button-save">
+      {{editMode?'Edit':'Add'}}
+    </button>
+    <button style="background: #DB6767"
+            class="button-save"
+            (click)="onCancelEdit()"
+    >Cancel
+    </button>
+  </div>
+</form>
+
+
