@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Available Bikes</h2>
+  <div *ngFor="let bike of combinedData">
+    <h3>{{ bike.name }} ({{ bike.brand }})</h3>
+    <img [src]="bike.imageUrl" alt="{{ bike.name }}" style="width: 100px; height: 100px;">
+    <p>Description: {{ bike.description }}</p>
+    <p>Price per hour: ${{ bike.pricePerHour }}</p>
+    <p>Status: {{ bike.isActive ? 'Available' : 'Not Available' }}</p>
+  </div>
+</div>
